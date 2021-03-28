@@ -1,0 +1,58 @@
+{{
+  const { $root } = Abell;
+
+  const sections = require('./../_data/sections.json');
+  const stories = require('../../content/stories.json');
+  const meta = require('./meta.json');
+
+  const Footer = require('./components/Footer.abell');
+  const Alert = require('./../components/Alert.abell');
+  const ArticlesList = require('./components/ArticlesList.abell');
+  const Tags = require('./../components/Tags.abell');
+  const Matomo = require('./../components/Matomo.abell');
+}}
+
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <Tags props={meta: meta} />
+
+    <link href="{{ $root }}/assets/css/bootstrap-4.6.min.css" rel="stylesheet">
+    <link href="{{ $root }}/assets/css/style.css" rel="stylesheet">
+
+    <Matomo />
+  </head>
+
+  <body>
+    <div class="container my-5" style="direction: rtl;text-align: right;">
+      <p class="text-center" style="font-size:3.7em;font-family: 'Baloo Bhaina 2', cursive;">
+        <span style="color:#ffa233;">bitcoind</span>.me
+      </p>    
+    </div>
+
+    <div style="background-color:#e1dfdf;color:#272838;padding-top:30px;padding-bottom:35px;">
+        <div class="container text-center ir_title" style="width: 65%;font-size:1.3em;">
+        
+        <div class="row text-center">
+            <div class="col-10 pt-4 text-right" style="font-weight: bold;font-size: 1.3em;">
+            <img src="/assets/images/video-avatar.png" style="height:40px;">
+            بیت‌کوین با ضیاء 
+            <span style="font-size:.7em;">(آموزش تصویری ابزارهای بیت‌کوین از مبتدی تا پیشرفته)</span>
+            </div>
+            <div class="col-2 text-left" style="font-size: .9em;">
+            <a href="https://twitter.com/@ziya_sadr" target="_blank"><img src="/assets/images/ziya_avatar.png" style="height:85px;"></a>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="pb-5 pt-4">
+      {{
+        sections.ziya_sadr.map(section => <ArticlesList props={section} />)
+      }}
+    </div>
+
+    <Footer />
+  </body>
+</html>

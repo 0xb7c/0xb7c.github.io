@@ -1,0 +1,89 @@
+{
+    "main": [
+        {
+            "name": "کتاب و مقالات صوتی",
+            "slug": "soundbook",
+            "icon": ""
+        },
+        {
+            "name": "کتاب، مقاله، و مطالب ترجمه شده",
+            "slug": "general_articles",
+            "icon": ""
+        },
+        {
+            "name": "راهنما و خودآموزها",
+            "slug": "tutorials",
+            "icon": ""
+        },
+        {
+            "name": "ویدئوهای آموزشی",
+            "slug": "video_tuts",
+            "icon": ""
+        },
+        {
+            "name": "مطالب مرتبط و دسته بندی نشده",
+            "slug": "uncategorized",
+            "icon": ""
+        },
+        {
+            "name": "مطالب اقتصادی",
+            "slug": "economic_articles",
+            "icon": ""
+        }
+    ],
+    "ziya_sadr": [
+        {
+            "name": "مفاهیم بیتکوین",
+            "slug": "bitcoin_concepts",
+            "icon": ""
+        },
+        {
+            "name": "نکات امنیتی",
+            "slug": "security_notes",
+            "icon": ""
+        },
+        {
+            "name": "هشدار و خطرات در فضای بیتکوین",
+            "slug": "dangers",
+            "icon": ""
+        },
+        {
+            "name": "لایوها",
+            "slug": "lives",
+            "icon": ""
+        },
+        {
+            "name": "کیف پول الکترام",
+            "slug": "electrum_wallet",
+            "icon": ""
+        },
+        {
+            "name": "ابزارهای بیتکوین",
+            "slug": "bitcoin_tools",
+            "icon": ""
+        },
+        {
+            "name": "امنیت حرفه‌ای",
+            "slug": "advanced_security",
+            "icon": ""
+        },
+        {
+            "name": "کیف پول سامورایی",
+            "slug": "samurai_wallet",
+            "icon": ""
+        },
+        {
+            "name": "دوستان بیت‌کوین",
+            "slug": "bitcoin_friends",
+            "icon": ""
+        }
+
+    ],
+    "bitcoinfordevs": [
+        {
+            "name": "پروتوکل بیت‌کوین",
+            "slug": "bitcoin_protocol",
+            "icon": ""
+        }
+    ]
+}

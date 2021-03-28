@@ -1,0 +1,40 @@
+<AbellComponent>
+{{
+  const stories = require('../../../content/stories.json');
+}}
+<template>
+    <div class="container mt-5">
+      <p class="section_header container-fluid" id="{{ props.section.slug }}">{{ props.section.name }}</p>
+    </div>
+    <div class="container mb-5" style="width: 75%;">
+      <div class="container"> 
+        <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
+          <div class="col-4 row_itemDesc">عنوان</div>
+        </div>
+
+        {{
+          stories.ziya_sadr.filter(s => s.category === props.section.slug ).map(story => `
+            <div class="row py-2">
+              <div class="col-lg-4 row_itemTitle row_gotoLink">
+              <a href="${story.link}">
+                 ${story.title}
+              </a>
+              </div>
+              <div class="col-lg-6 row_itemDesc">${story.subtitle}</div>
+              <div class="col-lg-2 row_downloadLink">
+              <a href="${story.link}">
+                <img src="assets/images/download-icon.png" class="download-icon">
+              </a>
+              </div>
+            </div>
+            <div class="row pb-2">
+              <div class="col row_abstract">${story.description}</div>
+            </div> 
+          `)
+        }}
+
+      </div>
+    </div>
+
+</template>
+</AbellComponent>

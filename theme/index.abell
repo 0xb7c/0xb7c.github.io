@@ -1,0 +1,53 @@
+{{
+  const { $root } = Abell;
+
+  const sections = require('./_data/sections.json');
+  const stories = require('../content/stories.json');
+  const meta = require('./meta.json');
+
+  const Footer = require('./components/Footer.abell');
+  const Alert = require('./components/Alert.abell');
+  const ArticlesList = require('./components/ArticlesList.abell');
+  const Tags = require('./components/Tags.abell');
+  const Matomo = require('./components/Matomo.abell');
+}}
+
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <Tags props={meta: meta} />
+
+    <link href="{{ $root }}/assets/css/bootstrap-4.6.min.css" rel="stylesheet">
+    <link href="{{ $root }}/assets/css/style.css" rel="stylesheet">
+
+    <Matomo />
+  </head>
+
+  <body>
+    <div class="container my-5" style="direction: rtl;text-align: right;">
+      <p class="text-center" style="font-size:3.7em;font-family: 'Baloo Bhaina 2', cursive;">
+        <span style="color:#ffa233;">bitcoind</span>.me
+      </p>    
+    </div>
+
+    <div class="py-4" style="background-color:#e1dfdf;color:#272838;">
+      <p style="font-size:2.1em;" class="text-center ir_title_bold">
+          منابع فارسی بیت‌کوین
+      </p>
+      <p class="container ir_title" style="direction: rtl;text-align: justify;width: 65%;line-height: 1.7em;">
+        در طول سال‌های گذشته شاهد تولید محتوای فارسی برای بیت‌کوین بوده‌ایم ولی متاسفانه این مطالب که غالبا بصورت فایل‌های pdf توسط افراد علاقمند به بیت‌کوین و به‌صورت خودجوش تهیه شده شده‌اند، بین مطالب گوناگون و اغلب نامرتبط وب‌سایت‌ها یا پست‌های کانال‌ها و گروه‌های تلگرامی از بین می‌روند.
+        <br/>
+        هدف از راه‌اندازی این وب‌سایت جمع‌آوری مطالب مفید مثل کتاب‌ها و مقالات ترجمه شده، خودآموزهای فارسی، و معرفی رویدادهای آنلاین و حضوری درباره بیت‌کوین، برای همه علاقمندان و مخصوصا تازه‌واردان به عرصه بیت‌کوین، اقتصاد مکتب اتریشی، و حریم خصوصی است. این وب‌سایت به‌صورت اپن‌سورس بر بستر گیت‌هاب راه‌اندازی شده و هرکسی می‌تواند محتوای تولید شده خود را درصورت دارا بودن شرایطی که در گیت‌هاب توضیح داده شده‌اند، در قالب فایل یا لینک به آن اضافه کند. مطالب معرفی شده در این سایت منحصرا مربوط به بیت‌کوین و تکنولوژی‌های جانبی آن هستند و اضافه شدن مطالب نویسندگان و مترجمان به‌هیچ‌وجه تایید کننده دیدگاه آن‌ها در مورد سایر پروژه‌های این حوزه نیست.
+      </p>
+    </div>
+
+    <div class="pb-5 pt-4">
+      <Alert />
+      {{
+        sections.main.map(section => <ArticlesList props={section} />)
+      }}
+    </div>
+
+    <Footer />
+  </body>
+</html>

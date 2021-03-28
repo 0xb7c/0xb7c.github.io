@@ -1,0 +1,186 @@
+body {
+    background-color: #272838;
+    color:#f0f0f0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url("/assets/fonts/IRANSansWeb.woff") format("woff");
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: 'IranSans-bold';
+    src: url("/assets/fonts/IRANSansWeb_Bold.woff") format("woff");
+    font-weight: bold; 
+}
+
+/* latin */
+@font-face {
+    font-family: 'Baloo Bhaina 2';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/qWcwB6yyq4P9Adr3RtoX1q6ySiQjtiEnm4c.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}  
+
+.ir_title{
+    font-family: IranSans;
+    font-size:1em;
+}
+.ir_title_bold{
+    font-family: IranSans-bold;
+    font-size:1.1em;
+}
+
+a:link{
+    color:#007bff;
+    text-decoration: none;
+}
+a:hover{
+    color:#007bff;
+    text-decoration: none;
+}
+a:active{
+    color:#007bff;
+    text-decoration: none;
+}    
+a:visited{
+    color:#007bff;
+    text-decoration: none;
+}
+
+.row_downloadLink > a:link{
+    color:#fff;
+    text-decoration: none;
+}
+.row_downloadLink > a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.row_downloadLink > a:active{
+    color:#fff;
+    text-decoration: none;
+}    
+.row_downloadLink > a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+
+.row_downloadLink_dark > a:link{
+    color: #272838;
+    text-decoration: none;
+}
+.row_downloadLink_dark > a:hover{
+    color: #272838;
+    text-decoration: none;
+}
+.row_downloadLink_dark > a:active{
+    color: #272838;
+    text-decoration: none;
+}    
+.row_downloadLink_dark > a:visited{
+    color: #272838;
+    text-decoration: none;
+}
+
+.row_gotoLink > a:link{
+    color:#fff;
+    text-align: right;
+    text-decoration: none;
+}
+.row_gotoLink > a:hover{
+    color:#fff;
+    text-align: right;
+    text-decoration: none;
+}
+.row_gotoLink > a:active{
+    color:#fff;
+    text-align: right;
+    text-decoration: none;
+}    
+.row_gotoLink > a:visited{
+    color:#fff;
+    text-align: right;
+    text-decoration: none;
+}
+
+.row_itemDesc > a:link{
+    color:#6aaff9;
+    text-decoration: none;
+}
+.row_itemDesc > a:hover{
+    color:#6aaff9;
+    text-decoration: none;
+}
+.row_itemDesc > a:active{
+    color:#6aaff9;
+    text-decoration: none;
+}    
+.row_itemDesc > a:visited{
+    color:#6aaff9;
+    text-decoration: none;
+}
+
+.email_style{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #666;
+}
+
+.section_header{
+    color:#F3DE8A;
+    text-align: right;
+    font-family: IranSans-bold;
+    font-size:1.2em;
+}
+.row_itemTitle{
+    color:#fff;
+    text-align: right;
+    font-family: IranSans;
+    font-size:1em;
+}
+.row_itemDesc{
+    margin-top:3px;
+    text-align: right;
+    font-family: IranSans;
+    font-size:.85em;      
+}
+
+.row_downloadLink{
+    margin-top:3px;
+    text-align: left;
+    font-family: IranSans;
+    font-size:.9em;  
+}
+
+.row_abstract{
+    font-family: IranSans;
+    font-size:.9em;      
+    text-align: justify;
+    color:rgb(140, 140, 140);
+    border-bottom:solid 1px #45464a;
+    padding-bottom: 7px;
+}
+
+.row_abstract_noborder{
+    font-family: IranSans;
+    font-size:.9em;
+    text-align: justify;
+    color:rgb(140, 140, 140);
+    padding-bottom: 7px;
+}
+
+.row_itemTitle_ziya{
+    color:rgb(44, 22, 22);
+    text-align: right;
+    font-family: IranSans;
+    font-size:1em;
+}   
+
+.download-icon{
+    height:20px;
+    opacity:.7;
+}

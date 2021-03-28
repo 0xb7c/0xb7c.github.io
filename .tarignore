@@ -1,0 +1,6 @@
+.git
+.gitignore
+.tarignore
+.debug/
+node_modules*
+dist/
