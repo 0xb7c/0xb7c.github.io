@@ -4,12 +4,13 @@
   const sections = require('./../_data/sections.json');
   const stories = require('../../content/stories.json');
   const meta = require('./meta.json');
-
-  const Footer = require('./components/Footer.abell');
+  
   const Alert = require('./../components/Alert.abell');
-  const ArticlesList = require('./components/ArticlesList.abell');
   const Tags = require('./../components/Tags.abell');
   const Matomo = require('./../components/Matomo.abell');
+
+  const Footer = require('./components/Footer.abell');
+  const ArticlesList = require('./components/ArticlesList.abell');
 }}
 
 <!DOCTYPE html>
