@@ -10,27 +10,25 @@
       <div class="container"> 
         <div class="row pb-1" style="border-bottom:solid 1px #b7b8c7;">
           <div class="col-4 row_itemDesc">عنوان</div>
-          <div class="col-8 row_itemDesc">توضیحات</div>
         </div>
 
         {{
           stories.bitcoinfordevs.filter(s => s.category === props.section.slug ).map(story => `
             <div class="row py-2">
-              <div class="col-lg-4 row_itemTitle row_gotoLink">
+              <div class="col row_itemTitle row_gotoLink">
               <a href="${story.link}">
                  ${story.title}
               </a>
               </div>
-              <div class="col-lg-6 row_itemDesc">${story.subtitle}</div>
               <div class="col-lg-2 row_downloadLink">
               <a href="${story.link}">
-                <img src="assets/images/download-icon.png" class="download-icon">
+                <img src="/assets/images/download-icon.png" class="download-icon">
               </a>
               </div>
             </div>
             <div class="row pb-2">
               <div class="col row_abstract">${story.description}</div>
-            </div> 
+            </div>
           `)
         }}
 
