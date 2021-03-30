@@ -15,8 +15,8 @@ jobs:
       - run: cp -r blobs/ dist/blobs/
       
       # Remove bundled js
-      - rm -rf dist/bundled-js/
-      - find . -type f -name '*.html' -exec sed -i '/bundled-js/d' {} \;
+      - run: rm -rf dist/bundled-js/
+      - run: find . -type f -name '*.html' -exec sed -i '/bundled-js/d' {} \;
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
